@@ -1,0 +1,15 @@
+{
+  "name": "nest-with-react-client",
+  "scripts": {
+    "install": "npm run install:server && npm run install:client",
+    "install:server": "cd server && npm i && cd ..",
+    "install:client": "cd client && npm i && cd ..",
+    "dev": "npx concurrently \"npm:dev:server\" \"npm:dev:client\" ",
+    "dev:server": "cd server && npm run start:dev -- --preserveWatchOutput",
+    "dev:client": "cd client && npm run dev",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "start": "cd server && npm start"
+  }
+}
