@@ -1,5 +1,5 @@
 {
-  "name": "nest-with-react-client",
+  "name": "fullstack-app",
   "scripts": {
     "install": "npm run install:server && npm run install:client",
     "install:server": "cd server && npm i && cd ..",
